@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
     <meta charset="UTF-8">
@@ -9,58 +9,58 @@
 </head>
 
 <body>
-<!-- Theme Toggle Button with both icons -->
-<button id="theme-toggle" class="theme-toggle-button">
-    <!-- Sun Icon (visible in dark mode) -->
-    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-    
-    <!-- Moon Icon (visible in light mode) -->
-    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-</button>
+
+<!-- Container for top-right buttons -->
+<div class="top-right-controls">
+    <!-- Language Toggle Button with Emojis -->
+    <button id="lang-toggle" class="control-button">
+        <span class="icon-uk">🇬🇧</span>
+        <span class="icon-no">🇳🇴</span>
+    </button>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="control-button">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+</div>
 
     <div class="main-content">
-        <h1>
-            JONATHAN FOLLAND
-        </h1>
+        <h1>JONATHAN FOLLAND</h1>
         <div class="linker">
             <span class="social-links">
-                <a href="https://github.com/jonafoll" target="_blank">
-                    <span>GitHub</span>
-                </a> |
-                <a href="https://www.linkedin.com/in/jonafoll/" target="_blank">
-                    <span>LinkedIn</span>
-                </a>
+                <a href="https://github.com/jonafoll" target="_blank"><span>GitHub</span></a> |
+                <a href="https://www.linkedin.com/in/jonafoll/" target="_blank"><span>LinkedIn</span></a>
             </span>
             <span>jfolland@proton.me</span>
             <span>+47 916 89 089</span>
         </div>
 
         <section class="about-section">
-            <h2>ABOUT ME</h2>
-            <p>
-                I'm a passionate developer with a focus on creating clean and efficient solutions. I have experience in both front-end and back-end development, with a particular interest in bridging the gap between complex data systems and an intuitive user experience. I enjoy tackling complex problems and turning ideas into reality.
+            <h2 data-translate-key="aboutTitle">OM MEG</h2>
+            <p data-translate-key="aboutParagraph">
+                Jeg er en lidenskapelig utvikler med fokus på å skape rene og effektive løsninger. Jeg har erfaring med både front-end og back-end-utvikling, med en spesiell interesse for å bygge bro mellom komplekse datasystemer og en intuitiv brukeropplevelse. Jeg trives med å løse komplekse problemer og gjøre ideer om til virkelighet.
             </p>
         </section>
 
         <section class="projects-section">
-            <h2>PROJECTS</h2>
+            <h2 data-translate-key="projectsTitle">PROSJEKTER</h2>
             <div class="projects-container">
                 <article class="project-card">
-                    <h3>MONK System</h3>
-                    <p>
-                        A Monitoring and Data Extraction Kiosk system developed for Oslo University Hospital. The system was made to automate the extraction, conversion, and management of patient data.
+                    <h3 data-translate-key="project1Title">MONK System</h3>
+                    <p data-translate-key="project1Desc">
+                        Et system for monitorering og datauthenting (Kiosk) utviklet for Oslo Universitetssykehus. Systemet ble laget for å automatisere uthenting, konvertering og håndtering av pasientdata.
                     </p>
-                    <a href="https://github.com/MONK-system" target="_blank" class="project-link">
-                        View on GitHub
+                    <a href="https://github.com/MONK-system" target="_blank" class="project-link" data-translate-key="viewOnGithub">
+                        Se på GitHub
                     </a>
                 </article>
                 <article class="project-card">
-                    <h3>ISFiT2025 App</h3>
-                    <p>
-                        An App developed for the international participants of the ISFiT festival in Trondheim, showing the schedule, attractions, and important information for visitors.
+                    <h3 data-translate-key="project2Title">ISFiT2025 App</h3>
+                    <p data-translate-key="project2Desc">
+                        En app utviklet for de internasjonale deltakerne på ISFiT-festivalen i Trondheim. Appen viser program, attraksjoner og viktig informasjon for de besøkende.
                     </p>
-                    <a href="https://github.com/isfit/App-isfit-25" target="_blank" class="project-link">
-                        View on GitHub
+                    <a href="https://github.com/isfit/App-isfit-25" target="_blank" class="project-link" data-translate-key="viewOnGithub">
+                        Se på GitHub
                     </a>
                 </article>
             </div>
