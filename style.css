@@ -41,7 +41,7 @@ body {
     overflow: hidden; 
     color: var(--text-color);
     background-color: var(--bg-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    /* REMOVED: transition property */
 }
 
 .main-content {
@@ -53,14 +53,11 @@ body {
     max-width: 400px;
     margin-top: 2rem;
     filter: var(--logo-filter);
-    transition: filter 0.3s ease;
+    /* REMOVED: transition property */
 }
 
-/* --- ANIMATED BACKGROUND --- */
-@keyframes backgroundScroll {
-    from { background-position: 0 0; }
-    to { background-position: 35px 35px; }
-}
+/* --- STATIC BACKGROUND --- */
+/* REMOVED: @keyframes backgroundScroll block */
 
 body::before {
     content: "";
@@ -78,6 +75,7 @@ body::before {
         transparent 1px,
         transparent 35px
     );
+    /* REMOVED: animation property */
 }
 
 /* --- THEME TOGGLE BUTTON --- */
@@ -96,7 +94,7 @@ body::before {
     justify-content: center;
     align-items: center;
     z-index: 100;
-    transition: background-color 0.3s ease;
+    /* REMOVED: transition property */
 }
 .theme-toggle-button:hover {
     background-color: var(--bg-color);
@@ -108,7 +106,7 @@ a {
     color: var(--link-color);
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.2s ease;
+    /* REMOVED: transition property */
 }
 
 a:hover {
@@ -171,7 +169,7 @@ h1, h2 {
     backdrop-filter: blur(2px);
     display: flex;
     flex-direction: column;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    /* REMOVED: transition property */
 }
 
 .project-card h3 {
@@ -192,7 +190,6 @@ h1, h2 {
 }
 
 /* --- RESPONSIVENESS (MOBILE & ZOOMED-IN DESKTOP) --- */
-/* Change: Increased breakpoint from 768px to 1100px */
 @media (max-width: 1450px) {
     body {
         align-items: flex-start;
