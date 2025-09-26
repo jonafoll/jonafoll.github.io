@@ -1,0 +1,203 @@
+/* --- THEME COLORS & VARIABLES --- */
+:root {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --text-muted-color: #a0a0a0;
+    --heading-color: #ffffff;
+    --link-color: #6cb6ff;
+    --link-hover-color: #94caff;
+    --card-bg-color: rgba(28, 28, 28, 0.8);
+    --card-border-color: #444;
+    --animated-line-color: #333;
+    --logo-filter: invert(1);
+}
+
+body.light-mode {
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --text-muted-color: #555;
+    --heading-color: #111;
+    --link-color: #0366d6;
+    --link-hover-color: #0056b3;
+    --card-bg-color: rgba(255, 255, 255, 0.8);
+    --card-border-color: #ddd;
+    --animated-line-color: #eee;
+    --logo-filter: invert(0);
+}
+
+/* --- GENERAL STYLES --- */
+body {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-content {
+    width: 100%;
+}
+
+.logo {
+    width: 70%;
+    max-width: 400px;
+    margin-top: 2rem;
+    filter: var(--logo-filter);
+    transition: filter 0.3s ease;
+}
+
+/* --- ANIMATED BACKGROUND --- */
+@keyframes backgroundScroll {
+    from { background-position: 0 0; }
+    to { background-position: 35px 35px; }
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--bg-color);
+    background-image: repeating-linear-gradient(
+        45deg,
+        var(--animated-line-color),
+        var(--animated-line-color) 1px,
+        transparent 1px,
+        transparent 35px
+    );
+}
+
+/* --- THEME TOGGLE BUTTON --- */
+.theme-toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
+    color: var(--text-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+.theme-toggle-button:hover {
+    background-color: var(--bg-color);
+}
+/* Hide the sun icon in dark mode */
+.light-mode .theme-toggle-button svg {
+    /* In light mode, the button will show a moon, so we need a sun icon. This is a placeholder, you can swap the SVG in JS if you want a different icon */
+}
+
+
+/* --- LINKS & TEXT --- */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+h1, h2 {
+    color: var(--heading-color);
+}
+
+.linker {
+    margin: 1rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.about-section {
+    max-width: 650px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.about-section p {
+    color: var(--text-muted-color);
+}
+
+/* --- PROJECT CARDS --- */
+.projects-section {
+    margin-top: 2rem;
+}
+
+.projects-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
+    border-radius: 6px;
+    padding: 1.5rem;
+    text-align: left;
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    color: var(--heading-color);
+}
+
+.project-card p {
+    margin-bottom: 1rem;
+    color: var(--text-muted-color);
+}
+
+.project-link {
+    font-weight: 600;
+    margin-top: auto;
+}
+
+/* --- RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
