@@ -195,9 +195,24 @@ h1, h2 {
     margin-top: auto;
 }
 
-/* --- RESPONSIVENESS --- */
 @media (max-width: 768px) {
     .projects-container {
         grid-template-columns: 1fr;
     }
+}
+
+/* --- Icon Toggling --- */
+
+.theme-toggle-button .icon-moon {
+    display: none;
+}
+.theme-toggle-button .icon-sun {
+    display: block;
+}
+
+.light-mode .theme-toggle-button .icon-sun {
+    display: none;
+}
+.light-mode .theme-toggle-button .icon-moon {
+    display: block;
 }
