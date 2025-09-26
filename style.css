@@ -35,11 +35,9 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    /* Change: Vertically center content on desktop by default */
     align-items: center; 
     min-height: 100vh;
     position: relative;
-    /* Change: Hide scrollbar on desktop by default */
     overflow: hidden; 
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -194,15 +192,12 @@ h1, h2 {
     margin-top: auto;
 }
 
-/* --- RESPONSIVENESS (MOBILE STYLES) --- */
-@media (max-width: 768px) {
-    /* New rules for the body on smaller screens */
+/* --- RESPONSIVENESS (MOBILE & ZOOMED-IN DESKTOP) --- */
+/* Change: Increased breakpoint from 768px to 1100px */
+@media (max-width: 1450px) {
     body {
-        /* Change: Align content to the top instead of centering */
         align-items: flex-start;
-        /* Change: Allow vertical scrolling ONLY on small screens */
         overflow-y: auto;
-        /* Optional: Add some extra padding for better spacing on mobile */
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
