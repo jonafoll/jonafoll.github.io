@@ -2,10 +2,10 @@
 const translations = {
     no: {
         aboutTitle: "OM MEG",
-        aboutParagraph: "Jeg er en lidenskapelig utvikler med fokus på å skape rene og effektive løsninger. Jeg har erfaring med både front-end og back-end-utvikling, med en spesiell interesse for å bygge bro mellom komplekse datasystemer og en intuitiv brukeropplevelse. Jeg trives med å løse komplekse problemer og gjøre ideer om til virkelighet.",
+        aboutParagraph: "Jeg er en utvikler med sterk lidenskap for å bygge robuste og effektive løsninger. Min kompetanse spenner over både front-end og back-end, og jeg har en spesiell interesse for samspillet mellom avansert teknologi og god brukeropplevelse. Jeg trives med å dykke ned i komplekse utfordringer for å skape funksjonelle og verdiskapende produkter.",
         projectsTitle: "PROSJEKTER",
         project1Title: "MONK System",
-        project1Desc: "Et system for monitorering og datauthenting (Kiosk) utviklet for Oslo Universitetssykehus. Systemet ble laget for å automatisere uthenting, konvertering og håndtering av pasientdata.",
+        project1Desc: "Et kiosk-system for monitorering og datauthenting utviklet for Oslo Universitetssykehus. Systemet ble laget for å automatisere uthenting, konvertering og håndtering av pasientdata.",
         project2Title: "ISFiT2025 App",
         project2Desc: "En app utviklet for de internasjonale deltakerne på ISFiT-festivalen i Trondheim. Appen viser program, attraksjoner og viktig informasjon for de besøkende.",
         viewOnGithub: "Se på GitHub"
