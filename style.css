@@ -78,7 +78,6 @@ body::before {
         transparent 1px,
         transparent 35px
     );
-    animation: backgroundScroll 5s linear infinite;
 }
 
 /* --- THEME TOGGLE BUTTON --- */
