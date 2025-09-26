@@ -9,7 +9,7 @@ const translations = {
         project2Title: "ISFiT2025 App",
         project2Desc: "En app utviklet for de internasjonale deltakerne på ISFiT-festivalen i Trondheim. Appen viser program, attraksjoner og viktig informasjon for de besøkende.",
         viewOnGithub: "Se på GitHub",
-        cvLinkText: "CV",
+        cvLinkText: "CV (NO)",
         // Add the path to the Norwegian CV
         cvPath: "./CV-Jonathan-Folland-NO.pdf" 
     },
@@ -22,7 +22,7 @@ const translations = {
         project2Title: "ISFiT2025 App",
         project2Desc: "An app developed for the international participants of the ISFiT festival in Trondheim. The app shows the schedule, attractions, and important information for visitors.",
         viewOnGithub: "View on GitHub",
-        cvLinkText: "CV",
+        cvLinkText: "CV (EN)",
         // Add the path to the English CV
         cvPath: "./CV-Jonathan-Folland-EN.pdf" 
     }
